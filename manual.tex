@@ -1,0 +1,42 @@
+\documentclass[12pt]{report} 
+
+\usepackage[spanish]{babel} 
+\usepackage{graphicx}
+\usepackage{pstricks}
+\usepackage{float}
+\usepackage{verbatim} 
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
+\titlespacing*{\chapter}{0pt}{-50pt}{20pt}
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			{\huge Universidad Nacional de R\'io Cuarto}\vspace{.2cm}
+			
+			{\large  Facultad de Ciencias Exactas, F\'isico-Qu\'imicas y Naturales}\vspace{.2cm}
+			
+			{\Large  Departamento de Computaci\'on}\vspace{.5cm}
+			
+			\includegraphics{imagenes/escudo}\vspace{1cm}
+			
+			\rule{13cm}{.01cm} \vspace{.5cm}\\
+			{\LARGE \textbf{jTLC}}\\
+			\vspace{.25cm}
+			{\textit{\LARGE{Java Thin Layer Chromatography}}}\\
+			\vspace{1cm}			
+			{\large \textbf{User Manual}}
+			\rule{13cm}{.01cm} \vspace{1cm}
+
+			
+
+			
+			\vspace{4cm}			
+			{\large R\'io Cuarto, 2016}
+			\end{center}
+	\end{titlepage}
+	
+\include{contenido}
+\end{document}

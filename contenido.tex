@@ -1,0 +1,29 @@
+\chapter*{\textit{Introduction}}
+\section*{Previous Requirements}
+Los requisitos m\'inimos para poder correr el juego son:
+\begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
+	\renewcommand{\labelitemi}{$\rightarrow$}
+	\item Sistema Operativo: Mac OS X, Windows (XP en adelante), Linux, Solaris. Tanto de 32 como de 64bits.
+	\item Software: Java 7 (requerido para correr el juego).
+	\item Procesador: {$>$} 1Ghz.
+	\item Memoria RAM: al menos 512Mb disponibles.
+	\item Tarjeta Gráfica: AMD/ATI Radeon 9500, NVIDIA GeForce 5 FX, Intel GMA 4500, o mejor. Con soporte para OpenGL 2.0
+	\item Pantalla: resoluci\'on m\'inima de 1024x768
+\end{itemize}
+
+\subsection*{Application Run}
+Para ejecutar la aplicaci\'on es necesario tener instalado como m\'inimo la versi\'on 7 de la \textit{Java Virtual Machine} (\emph{http://www.java.com/es/download/}). Dependiendo del sistema operativo desde el cual trabajen, podr\'an ejecutar la aplicaci\'on directamente desde el explorador de archivos o por medio de la l\'inea de comandos (consola) escribiendo: 
+\emph{java -jar Checkers3D.jar}\\
+Al ejecutarse se descomprimen las librer\'ias necesarias para comunicar Java con OpenGL (gr\'aficos) y OpenAL (sonidos) espec\'ificas para nuestro sistema operativo, y se crea un archivo de configuraci\'on en donde se almacenan los datos del juego.
+En la figura \ref{fig:inicial} se observa la ventana principal del juego luego de su ejecuci\'on. 
+
+\begin{figure}[H]
+	\vspace{-1cm}
+	\centering
+	\includegraphics[width=385px]{imagenes/main}
+	\centering
+	\vspace{-0.4cm}
+	\caption{Application initial screen.}
+	\label{fig:inicial}
+	\vspace{-0.25cm}
+\end{figure}
