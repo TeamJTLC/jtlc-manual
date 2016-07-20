@@ -1,21 +1,21 @@
 \chapter*{\textit{Introduction}}
 \section*{Previous Requirements}
-Los requisitos m\'inimos para poder correr el juego son:
+the minimum requirements to run properly the application are:
 \begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
 	\renewcommand{\labelitemi}{$\rightarrow$}
-	\item Sistema Operativo: Mac OS X, Windows (XP en adelante), Linux, Solaris. Tanto de 32 como de 64bits.
-	\item Software: Java 7 (requerido para correr el juego).
-	\item Procesador: {$>$} 1Ghz.
-	\item Memoria RAM: al menos 512Mb disponibles.
-	\item Tarjeta Gráfica: AMD/ATI Radeon 9500, NVIDIA GeForce 5 FX, Intel GMA 4500, o mejor. Con soporte para OpenGL 2.0
-	\item Pantalla: resoluci\'on m\'inima de 1024x768
+	\item Operative System: Mac OS X, Windows (XP or newer), Linux, Solaris. 32 or 64 bits architectures.
+	\item Software: Java 8 (mandatory requirement).
+	\item CPU: AMD or Intel {$>$} 1Ghz.
+	\item Memory: At least 512Mb availables.
+	\item Graphics Card: AMD/ATI Radeon 9500, NVIDIA GeForce 5 FX, Intel GMA 4500, or better.
+	\item Screen: minimun resolution 1024x768
 \end{itemize}
 
 \subsection*{Application Run}
-Para ejecutar la aplicaci\'on es necesario tener instalado como m\'inimo la versi\'on 7 de la \textit{Java Virtual Machine} (\emph{http://www.java.com/es/download/}). Dependiendo del sistema operativo desde el cual trabajen, podr\'an ejecutar la aplicaci\'on directamente desde el explorador de archivos o por medio de la l\'inea de comandos (consola) escribiendo: 
-\emph{java -jar Checkers3D.jar}\\
-Al ejecutarse se descomprimen las librer\'ias necesarias para comunicar Java con OpenGL (gr\'aficos) y OpenAL (sonidos) espec\'ificas para nuestro sistema operativo, y se crea un archivo de configuraci\'on en donde se almacenan los datos del juego.
-En la figura \ref{fig:inicial} se observa la ventana principal del juego luego de su ejecuci\'on. 
+To run the application it's necessary have installed at least the version 8 of the \textit{Java Virtual Machine} (\emph{http://www.java.com/en/download/}).\\
+According to the Operative System installed, can run the application directly from the file explorer or through the system console writing:\\ \emph{java -jar jtlc.jar} over the application folder.
+When the application start a new file (\textit{jtlc.settings.props}) is created to store the current settings.
+In picture \ref{fig:inicial} is detailed  the application main window.
 
 \begin{figure}[H]
 	\vspace{-1cm}
@@ -25,5 +25,20 @@ En la figura \ref{fig:inicial} se observa la ventana principal del juego luego d
 	\vspace{-0.4cm}
 	\caption{Application initial screen.}
 	\label{fig:inicial}
+	\vspace{-0.25cm}
+\end{figure}
+
+\subsection*{Application Settings}
+The application settings allows to the user change the system language, projects workspace and enable or disable animations (like screen transition between each analysis screen). To access the settings screen go to \emph{Edit} \ding{222} \emph{Change settings} on the main menu bar.
+In the settings screen use \emph{Directory Selector} to change current workspace, the language select to change the application languge, move the animations switch to enable or disable animations. To save current settings click on the button Accept or press \emph{Enter} key from your keyboard. to discard the current settings click on the button Cancel or press \emph{Esc} key.
+
+\begin{figure}[H]
+	\vspace{-1cm}
+	\centering
+	\includegraphics[width=385px]{imagenes/settings}
+	\centering
+	\vspace{-0.4cm}
+	\caption{Application settings.}
+	\label{fig:settings}
 	\vspace{-0.25cm}
 \end{figure}
