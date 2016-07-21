@@ -7,9 +7,13 @@
 \usepackage{verbatim}
 \usepackage{pifont}
 
+
+\usepackage{tocloft}
+
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
+\setlength\cftbeforetoctitleskip{-5pt}
 \titlespacing*{\chapter}{0pt}{-50pt}{20pt}
 
 \begin{document}
@@ -38,6 +42,11 @@
 			{\large R\'io Cuarto, 2016}
 			\end{center}
 	\end{titlepage}
-	
+
+\pagenumbering{arabic}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\setlength{\cftbeforetoctitleskip}{-2.5em}
+\tableofcontents	
 \include{contenido}
 \end{document}
