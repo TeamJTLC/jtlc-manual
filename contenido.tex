@@ -134,6 +134,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 
 \chapter{Samples Analysis}
 \section{Image Load}
+El primer paso para el análisis de una muestra es cargar la im\'agen. Dicha tarea se puede realizar de dos formas. La primera es haciendo uso de la funci\'on \emph{drag & drop}, que le permitir\'a al usuario utilizar el mouse para arrastras un archivo hacia la zona central rodeada por l\'ineas de puntos. La segunda opci\'on que permite la carga del archivo es hacer click sobre la zona central rodeada por l\'ineas de puntos, lo que a continuaci\'on abrir\'a una ventana que permite la selecci\'on de archivos a trav\'es de la b\'usqueda de archivos entre carpetas.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -146,6 +147,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 \end{figure}
 
 \section{Image Crop}
+El corte de im\'agenes se realiza utilizando dos sliders, uno vertical y otro horizontal, que permitir\'an correr las líneas de corte desde los m\'argenes laterales y los m\'argenes superior e inferior.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -158,6 +160,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 \end{figure}
 
 \section{Image Rotation}
+Esta secci\'on le permite al usuario rotar la im\'agen. Se ofrecen las opciones: \emph{\'angulo de rotaci\'on}, el usuario selecciona el \'angulo preciso a rotar; \emph{girar a la derecha}, gira la im\'agen 90 grados a la derecha; \emph{girar a la izquierda}, gira la im\'agen 90 grados a la izquierda; \emph{invertir verticalmente}, invierte la im\'agen en sentido vertical; \emph{invertir horizontalmente}, invierte la im\'agen en sentido horizontal.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -170,6 +173,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 \end{figure}
 
 \section{Samples Selection}
+En esta etapa del proceso el usuario puede seleccionar con un slider las muestras que ser\'an analizadas. Para poder agregar una muestra se debe realizar doble click sobre el slider, mientras que para eliminarlo se debe oprimir el bot\'on \emph{suprimir} del teclado.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -182,6 +186,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 \end{figure}
 
 \section{Samples Special Points}
+La selecci\'on de puntos especiales puede realizarse de dos formas. La primera es individualmente, mientras que la segunda permite sincronizar la ubicación de los puntos especiales activando la opción para ello debajo de las muestras que se desean alinear conjuntamente.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -194,6 +199,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 \end{figure}
 
 \section{Samples Peaks Selection}
+Uno de los pasos finales es la selecci\'on de picos para cada muestra. La ventana se divide en pesta\~nas, una por cada muestra, para exhibir los picos hallados y el usuario a la vez puede modificar o agregar picos de forma s\'imil al momento de seleccionar las muestras. Se ofrece un slider sobre la gráfica y otro al costado de la muestra, ambos representan en paralelo el mismo sector de la muestra y es posible agregar un \'area a partir de cualquier de las dos opciones.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -206,6 +212,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 \end{figure}
 
 \section{Samples Comparation}
+Al final de la lista de pesta\~nas se puede ver una que dice \emph{comparaci\'on} que muestra todas las gr\'aficas en una con colores diferentes para cada una, dicho color es modificable e incluso es posible quitar el relleno transparente, o bien seleccionar cu\'ales muestras ver en la comparaci\'on.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -218,6 +225,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 \end{figure}
 
 \section{Analysis Results}
+De forma an\'aloga a la fase anterior, se muestran los resultados para cada muestra con informaci\'on del an\'alisis realizado en cada pico: l\'imites, m\'aximo, m\'inimo, altura, superficie, superficie relativa y l\'inea  base. Adem\'as se ofrece la opci\'on para exportar la im\'agen de la gr\'afica.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -230,6 +238,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 \end{figure}
 
 \section{Analysis Reports}
+Nuevamente, haciendo uso de la ventana con pesta\~nas, se muestra la informaci\'on de cada muestra en forma de reporte con toda la informaci\'on, im\'agenes iniciales y procesadas. Tambi\'en se muestra, en al primer pesta\~na, informaci\'on general del proyecto junto con la im\'agen que contiene a todas las muestras.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -243,14 +252,16 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 
 \chapter{Data Export}
 \section{Export images}
-To export project data...
+Para exportar las im\'agenes que se trabajaron en la aplicaci\'on se debe seleccionar la opción \emph{exportar}, luego, entre la listas de acciones que ofrece el men\'u emergente se debe seleccionar \emph{Im\'agenes originales} lo que ofrecer\'a como resultado son las im\'agenes iniciales: la im\'agen inicial que contiene toda la muestra y las muestras individuales. Cada im\'agen luego de ser seleccionada se muestra en una ventana emergente con la posibilidad de redimensionar la misma antes de elegir cu\'al es el directorio en el que se desea guardar la im\'agen.
+Otra opci\'on que ofrece el men\'u \emph{exportar}, es \emph{Im\'agenes procesadas}, lo cual ofrece las mismas im\'agenes de la primer opci\'on pero con el proceso de recorte y giro de la im\'agen aplicado.
 
 \section{Export reports}
-To export project data...
+Para exportar informaci\'on del proyecto se debe seleccionar la opci\'on \emph{exportar} y dentro del men\'u de opciones elegir \emph{Reportes}. Las opciones que en este punto se ofrecen son para exportar datos del proyecto o bien de las muestras individuales. A la vez, sobre cada opci\'on para exportar se permite decidir sobre el formato del documento a exportar: PDF, ODT, HTML o CSV. 
+La opci\'on para exportar el proyecto, ofrece la informaci\'on completa sobre el mismo. Es decir, im\'agen original y modificada, comentarios \'angulo de correcci\'on sobre giro, puntos de corte del recorte de la im\'agen y puntos de corte para separar las muestras. A continuaci\'on, se muestra consecutivamente informaci\'on sobre cada muestra individual (dichos datos son los que se pueden exportar individualmente). Los datos que se exhiben en cada muestra individual son las im\'agenes originales, im\'agenes procesadas, puntos de l\'imite, punto de siembra, frente solvente, im\'agen de media y picos de la muestra,superficie absoluta, comentarios sobre cada paso del proyecto, enumeraci\'on de picos: pisici\'on, l\'imites, m\'aximo, m\'inimo, altura, superficie absoluta, superficie relativa y l\'inea base.
 
 \section{Export data}
 \subsection{Export mean}
-To export project data...
+Para exportar informaci\'on sobre la media de cada muestra se debe utilizar la opci\'on \emph{exportar}, luego seleccionar \emph{media} y la muestra de la cual se quiere extraer la informaci\'on; paso a seguir, se descargar\'a un archivo de texto con los datos solicitados.
 
 \subsection{Export plain data}
-To export project data...
+Esta opci\'on permite exportar, en documentos de texto plano, informaci\'on sobre el proyecto con nombre, comentarios y datos extras (fechas y modificaciones a la im\'agen original). Cuando se selecciona una muestra particular se muestra informaci\'on sobre ubicaci\'on de puntos especiales, comentarios, l\'imites, superficie, altura, m\'aximo, m\'inimo y l\'inea de base por pico.
