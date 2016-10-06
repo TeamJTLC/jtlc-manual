@@ -134,6 +134,7 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 
 \chapter{Samples Analysis}
 \section{Image Load}
+The first step in the analysis of a sample is to load the image. This task can be performed in two ways. The first is by using the \emph{drag \& drop} function, which will allow the user to use the mouse to drag a file to the central area surrounded by dotted lines. The second option allows loading the file is to click on the central area surrounded by dotted lines, which below will open a window that allows the selection of files to search through the files between folders.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -144,8 +145,10 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_load}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \section{Image Crop}
+Cutting images is done using two sliders, vertical and horizontal, which will allow the cutting lines running from the lateral margins and the upper and lower margins.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -156,8 +159,10 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_cut}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \section{Image Rotation}
+This section allows the user to rotate the image. options are available: \emph{rotation angle}, the user selects the precise angle to rotate; \emph{turn right}, turn the image 90 degrees clockwise; \emph{turn left}, turn the image 90 degrees to the left; \emph{invest vertically} reverses the image vertically; \emph{invest horizontally} reverses the image horizontally.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -168,8 +173,10 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_rot}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \section{Samples Selection}
+At this stage the user can select a slider samples to be analyzed. In order to submit a sample should be performed double click on the slider while to remove it you must press the \emph{delete} button on the keyboard.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -180,8 +187,10 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_samples_selection}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \section{Samples Special Points}
+The selection of special points can be done in two ways. The first is individually, while the second allows synchronizing the location of the special points enabling the option to do so under the samples to be aligned together.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -192,8 +201,10 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_samples_special_points}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \section{Samples Peaks Selection}
+One of the final steps is the selection of peaks for each sample. The window is divided into tabs, one for each sample found to exhibit peaks and the user at a time can modify or add similar peaks form when selecting the samples. a slider on the graph and another on the side of the sample is provided, both represent the same sector parallel sample and you can add an area from any of the two options.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -204,8 +215,10 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_samples_peaks}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \section{Samples Comparation}
+At the end of the tab list you can see one that says \emph{comparison} showing all graphics in different colors for each, that color is modifiable and may even remove the transparent fill, or select which samples seen in the comparison .
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -216,8 +229,10 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_samples_comparation}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \section{Analysis Results}
+De forma an\'aloga a la fase anterior, se muestran los resultados para cada muestra con informaci\'on del an\'alisis realizado en cada pico: l\'imites, m\'aximo, m\'inimo, altura, superficie, superficie relativa y l\'inea  base. Adem\'as se ofrece la opci\'on para exportar la im\'agen de la gr\'afica.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -228,8 +243,10 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_analysis_results}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \section{Analysis Reports}
+Again, it using the tabbed window, the information of each sample in report form with all the information, and processed initial images shown. Also shown in the first tab, General project information along with the image containing all samples.
 \begin{figure}[H]
 	\vspace{0cm}
 	\centering
@@ -240,17 +257,64 @@ To save current project use the option \emph{Overwrite Project}, if exist a prev
 	\label{fig:image_analysis_reports}
 	\vspace{-0.25cm}
 \end{figure}
+\newpage
 
 \chapter{Data Export}
 \section{Export images}
-To export project data...
+To export the images that worked on the application you must select the \emph{export} option, then, between action lists offered by the popup menu should be selected \emph{original images} which will offer as a result are the initial images: the initial image containing all the sample and the individual samples. Each image after being selected is displayed in a pop-up window with the ability to resize it before choosing which is the directory where you want to save the image.
+Another option offered by the \emph{export} menu is \emph{processed image}, which offers the same images of the first option but with the process of trimming and image rotation applied.
+\begin{figure}[H]
+	\vspace{0cm}
+	\centering
+	\includegraphics[width=385px]{imagenes/export_image}
+	\centering
+	\vspace{-0.4cm}
+	\caption{Image export example.}
+	\label{fig:export_images}
+	\vspace{-0.25cm}
+\end{figure}
+\newpage
 
 \section{Export reports}
-To export project data...
+To export project information must select the option to \emph{export} and in the menu of options to choose \emph{Reports}. The options available at this point are to export project data or individual samples. At the same time, on each option to export are allowed to decide on the format of the document to export: PDF, ODT, HTML or CSV.
+The option to export the project, provides complete information on it. That is, original and modified image, angle correction comments on draft, cutoffs cutout image and cutoffs to separate the samples. Next, it is shown consecutively on each individual sample information (such data are those that can be exported individually). The data displayed on each individual sample are the original images, processed images, points limit, seeding point, front solvent, image and medium peaks of the sample, absolute area, comments on each step of the project, enumerating peaks : position, limits, maximum, minimum, height, total surface area relative and baseline.
+\begin{figure}[H]
+	\vspace{0cm}
+	\centering
+	\includegraphics[width=385px]{imagenes/export_report}
+	\centering
+	\vspace{-0.4cm}
+	\caption{Report export example.}
+	\label{fig:export_reports}
+	\vspace{-0.25cm}
+\end{figure}
+\newpage
 
 \section{Export data}
 \subsection{Export mean}
-To export project data...
+To export information about the mean of each sample should use the \emph{export} option, then select the sample \emph{mean} and which is to extract the information; next step, a text file is downloaded with the requested data.
+\begin{figure}[H]
+	\vspace{0cm}
+	\centering
+	\includegraphics[width=385px]{imagenes/export_mean}
+	\centering
+	\vspace{-0.4cm}
+	\caption{Samples mean export example.}
+	\label{fig:export_mean}
+	\vspace{-0.25cm}
+\end{figure}
+\newpage
 
 \subsection{Export plain data}
-To export project data...
+This option allows you to export in plain text documents, information about the project name, comments and additional data (dates and changes to the original image). When you select a particular sample location information of special points, comments, limits, area, height, maximum, minimum and peak base line shown.
+\begin{figure}[H]
+	\vspace{0cm}
+	\centering
+	\includegraphics[width=385px]{imagenes/export_data}
+	\centering
+	\vspace{-0.4cm}
+	\caption{Project data export example.}
+	\label{fig:export_data}
+	\vspace{-0.25cm}
+\end{figure}
+\newpage
